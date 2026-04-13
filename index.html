@@ -92,7 +92,7 @@
   .nav-links a:hover::after { width:100%; }
 
   #hero {
-    min-height:100vh;
+    height:100dvh;
     display:grid; grid-template-columns:54fr 46fr;
     background:var(--parchment); overflow:hidden; position:relative;
   }
@@ -160,11 +160,12 @@
     height:100vh;
   }
   .hero-portrait-wrap img {
-    width:100%; height:100%;
-    object-fit:cover; object-position:center 12%; display:block;
-    transform:scale(1.05);
-    animation:settle 2.5s var(--ease) .05s forwards;
-  }
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 12%;
+  display:block;
+}
   @keyframes settle { to { transform:scale(1); } }
   .hero-portrait-wrap::before {
     content:''; position:absolute; inset:0; z-index:2; pointer-events:none;
